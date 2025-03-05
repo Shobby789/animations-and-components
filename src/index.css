@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  @apply bg-gray-950 text-black;
+} */
+
+.swiper-horizontal {
+  overflow: visible;
+}
+
+body {
+  background: #020202;
+  overflow-x: hidden;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+  display: flex;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logos2 {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  margin-top: 50px;
+  position: relative;
+}
+
+.logos2:before,
+.logos2:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos2:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos2:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos-slide2 {
+  display: inline-block;
+  animation: 15s slide2 infinite linear;
+  display: flex;
+}
+
+.logos-slide2 img {
+  height: 50px;
+  margin: 0 40px;
+}
+
+/* moving animation */
+@keyframes floatUpAndDown {
+  0%,
+  100% {
+    transform: translateY(0); /* No vertical movement at the start and end */
+  }
+  50% {
+    transform: translateY(-160px); /* Moves up by 160px */
+  }
+}
+
+.floating-rocket {
+  animation: floatUpAndDown 5s ease-in-out infinite;
+  transform: translateX(-50%) translateY(-50%); /* Keep the element centered */
+}
+
+.bg-color {
+  @apply bg-red-500;
+}

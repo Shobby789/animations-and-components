@@ -1,0 +1,179 @@
+/* animated-bar */
+@keyframes animatedBar1 {
+  0% {
+    transform: translateY(170px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(170px);
+  }
+}
+
+.animated-bar {
+  animation: animatedBar1 4s infinite;
+}
+
+/* bar 2 */
+@keyframes animatedBar2 {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.animated-bar2 {
+  animation: animatedBar2 4.5s infinite;
+}
+
+/* bar 3 */
+@keyframes animatedBar3 {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(60px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+.animated-bar3 {
+  animation: animatedBar3 3.5s infinite;
+}
+
+/* bar 4 */
+@keyframes animatedBar4 {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.animated-bar4 {
+  animation: animatedBar4 4s infinite;
+}
+
+/* bar 5 */
+@keyframes animatedBar5 {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.animated-bar5 {
+  animation: animatedBar5 4.5s infinite;
+}
+
+/* bar 6 */
+@keyframes animatedBar6 {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.animated-bar6 {
+  animation: animatedBar6 4s infinite;
+}
+
+/* bar 7 */
+@keyframes animatedBar7 {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.animated-bar7 {
+  animation: animatedBar7 3.5s infinite;
+}
+
+.custom-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero .img {
+  width: 50%;
+  aspect-ratio: 1;
+}
+
+.footer {
+  height: 50vh;
+  align-items: flex-start;
+}
+
+.footer a {
+  font-size: 4vw;
+  color: #fff;
+}
+
+.main {
+  width: 100vw;
+  height: 150vh;
+  flex-direction: column;
+}
+
+.row {
+  position: relative;
+  width: 100vw;
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.card {
+  position: relative;
+  width: 40%;
+  height: 360px;
+  border-radius: 0.75em;
+  overflow: hidden;
+  will-change: transform;
+}
