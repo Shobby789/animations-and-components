@@ -80,17 +80,20 @@ const ParallaxSections = () => {
   }, []);
 
   return (
-    <main ref={containerRef} className="bg-black h-[600vh] relative">
-      {sections.map(({ id, bgColor, text, image }) => (
-        <ParallaxSection
-          key={id}
-          bgColor={bgColor}
-          text={text}
-          scrollYProgress={scrollYProgress}
-          image={image}
-        />
-      ))}
-    </main>
+    <section className="w-full relative flex flex-col">
+      <div className="w-full h-screen bg-gray-800"></div>
+      <main ref={containerRef} className="bg-black h-[600vh] relative w-full">
+        {sections.map(({ id, bgColor, text, image }) => (
+          <ParallaxSection
+            key={id}
+            bgColor={bgColor}
+            text={text}
+            scrollYProgress={scrollYProgress}
+            image={image}
+          />
+        ))}
+      </main>
+    </section>
   );
 };
 
@@ -101,7 +104,7 @@ const ParallaxSection = ({ bgColor, text, scrollYProgress, image }) => {
 
   return (
     <motion.div
-      style={{ scale }}
+      // style={{ scale }}
       className={`w-[80%] h-[90vh] sticky top-0 mx-auto flex flex-col items-center justify-center gap-5 text-white z-0 ${bgColor} mt-8`}
     >
       {/* <h2 className="text-4xl font-semibold">{text}</h2> */}

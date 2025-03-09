@@ -137,3 +137,7 @@ body {
 .bg-color {
   @apply bg-red-500;
 }
+
+img {
+  cursor: url("/public/pointer.png"), auto;
+}
