@@ -22,6 +22,8 @@ import ParallexSections from "./parallexSections/ParallexSections";
 import ScrollOpacityText from "./scrollOpacityText/ScrollOpacityText";
 import CardsParallex from "./cardsParallex/CardsParallex";
 import Slider from "./heroMobileMockupsSlider/Slider";
+import ImageSlider from "./imageSlider/ImageSlider";
+import ImageSlider2 from "./imageSlider/ImageSlider2";
 
 const App = () => {
   return (
@@ -34,6 +36,7 @@ const App = () => {
       <Route path="/scroll-opacity" element={<ScrollOpacityText />} />
       <Route path="/cards-parallex" element={<CardsParallex />} />
       <Route path="/slider" element={<Slider />} />
+      <Route path="/image-slider" element={<ImageSlider2 />} />
     </Routes>
   );
 };
