@@ -24,6 +24,9 @@ import CardsParallex from "./cardsParallex/CardsParallex";
 import Slider from "./heroMobileMockupsSlider/Slider";
 import ImageSlider from "./imageSlider/ImageSlider";
 import ImageSlider2 from "./imageSlider/ImageSlider2";
+import UseInView from "./UseInView/UseInView";
+import UseScroll from "./UseScroll/UseScroll";
+import TextMaskEffect from "./MaskEffect/TextMaskEffect";
 
 const App = () => {
   return (
@@ -37,6 +40,9 @@ const App = () => {
       <Route path="/cards-parallex" element={<CardsParallex />} />
       <Route path="/slider" element={<Slider />} />
       <Route path="/image-slider" element={<ImageSlider2 />} />
+      <Route path="/use-in-view-animation" element={<UseInView />} />
+      <Route path="/usescroll" element={<UseScroll />} />
+      <Route path="/text-mask-effect" element={<TextMaskEffect />} />
     </Routes>
   );
 };
