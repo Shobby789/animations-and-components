@@ -1,8 +1,9 @@
-import { useInView, motion } from "framer-motion";
+import { useInView, motion, useTransform, useScroll } from "framer-motion";
 import React, { useRef } from "react";
 import AnimatedText from "./AnimatedText";
 
 const UseInView = () => {
+  const { scrollYProgress } = useScroll();
   return (
     <>
       <div className="bg-white w-full h-screen flex items-center justify-center">
@@ -18,6 +19,8 @@ const UseInView = () => {
           const isInView = useInView(ref, { once: false });
           const paragraphRef = useRef(null);
           const paragraphIsInView = useInView(paragraphRef, { once: false });
+
+          const width = useTransform(scrollYProgress, [0, 1], ["10%", "90%"]);
 
           return (
             <motion.div
