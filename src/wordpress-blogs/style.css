@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.blog-container {
+  font-family: "Inter", sans-serif !important;
+}
+
+/* Responsive paragraphs */
+.blog-container p {
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.6;
+}
+
+/* Responsive H1 */
+.blog-container h1 {
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 700;
+  margin: 30px 0 5px;
+}
+
+/* Responsive H2 */
+.blog-container h2 {
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 600;
+  margin: 30px 0 5px;
+}
+
+/* Responsive H3 */
+.blog-container h3 {
+  font-size: clamp(20px, 4vw, 24px);
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+
+/* List styles */
+.blog-container ul {
+  list-style-type: disc;
+  padding: 0 20px;
+}
+
+/* If images are wrapped inside figure tags */
+.blog-container img,
+.blog-container figure img,
+.blog-container .wp-block-image img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  border-radius: 24px;
+}
+
+.faq-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.faq-checkbox {
+  display: none;
+}
+
+.faq-question {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s;
+}
+
+.faq-checkbox:checked + .faq-question::after {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-checkbox:checked + .faq-question + .faq-answer {
+  max-height: 200px; /* Enough to show the answer */
+}
+
+details {
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  background: #f1f1f1;
+  width: 70%;
+  margin: 0 auto 15px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  /* margin-bottom: 15px; */
+}
+
+details[open] {
+  background: #f1f1f1;
+}
+
+details[open] > summary {
+  margin-bottom: 15px;
+}
+
+details > section > p {
+  font-size: 28px;
+}
+
+summary {
+  list-style: none; /* Remove bullet points */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Remove default arrow in WebKit browsers (Chrome, Safari) */
+}
+
+summary::marker {
+  content: none; /* Remove default arrow in Firefox */
+}
+
+#faqs {
+  text-align: center;
+  margin-bottom: 20px;
+}

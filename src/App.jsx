@@ -27,6 +27,12 @@ import ImageSlider2 from "./imageSlider/ImageSlider2";
 import UseInView from "./UseInView/UseInView";
 import UseScroll from "./UseScroll/UseScroll";
 import TextMaskEffect from "./MaskEffect/TextMaskEffect";
+import UseInViewPractice from "./UseInView/UseInViewPractice";
+import MobileAppPageHero from "./MobileAppPageHero/MobileAppPageHero";
+import TrafficLights from "./trafficLightsChallenge/TrafficLights";
+import ScrollBasedCards from "./scroll/ScrollBasedCards";
+import StackingCards from "./stackingCards/StackingCards";
+import WordpressBlog from "./wordpress-blogs/WordpressBlog";
 
 const App = () => {
   return (
@@ -41,8 +47,14 @@ const App = () => {
       <Route path="/slider" element={<Slider />} />
       <Route path="/image-slider" element={<ImageSlider2 />} />
       <Route path="/use-in-view-animation" element={<UseInView />} />
+      <Route path="/use-in-view-animation-2" element={<UseInViewPractice />} />
       <Route path="/usescroll" element={<UseScroll />} />
       <Route path="/text-mask-effect" element={<TextMaskEffect />} />
+      <Route path="/mobile-app-hero" element={<MobileAppPageHero />} />
+      <Route path="/traffic-lights" element={<TrafficLights />} />
+      <Route path="/scroll-cards" element={<ScrollBasedCards />} />
+      <Route path="/stacking-cards" element={<StackingCards />} />
+      <Route path="/blog" element={<WordpressBlog />} />
     </Routes>
   );
 };

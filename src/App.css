@@ -127,13 +127,13 @@ img {
   object-fit: cover;
 }
 
-section {
+/* section {
   position: relative;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .hero {
   height: 100vh;

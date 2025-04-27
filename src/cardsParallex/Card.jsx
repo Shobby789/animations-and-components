@@ -40,7 +40,7 @@ const Card = ({
           "styles.card w-[1000px] h-[500px] flex flex-col relative top-[-25%] rounded-3xl"
         }
       >
-        {/* <h2 className="text-center m-0 text-2xl">{title}</h2>
+        <h2 className="text-center m-0 text-2xl">{title}</h2>
         <div
           className={"styles.body w-full h-[100%] flex mt-[50px] gap-[50px]"}
         >
@@ -82,7 +82,7 @@ const Card = ({
               />
             </motion.div>
           </div>
-        </div> */}
+        </div>
         <img
           src={image}
           alt={title}
@@ -90,12 +90,12 @@ const Card = ({
         />
       </motion.div>
 
-      {/* <div className="w-[940px] flex items-start justify-between">
+      <div className="w-[940px] flex items-start justify-between">
         <p className="text-xl w-1/2 bg-black">{title}</p>
         <p className="text-xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-      </div> */}
+      </div>
     </div>
   );
 };
